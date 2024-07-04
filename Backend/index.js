@@ -43,10 +43,10 @@ const PORT = process.env.PORT || 7000;
 
 // Configure CORS to allow requests from your frontend
 app.use(cors({
-    origin: '*',
+    origin: "*",
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: false
+    credentials: true
 }));
 
 // Middleware to handle CORS preflight requests
